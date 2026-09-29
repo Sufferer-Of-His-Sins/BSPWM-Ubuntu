@@ -1,0 +1,1 @@
+sudo apt install polybar bspwm sxhkd kitty rofi feh x11-xserver-utils
