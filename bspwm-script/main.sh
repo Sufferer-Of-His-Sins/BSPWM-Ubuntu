@@ -1,5 +1,12 @@
 #! /bin/sh
 
+sxhkd &
+export XCURSOR_THEME=mouse_icons
+export XCURSOR_SIZE=24
+xsetroot -cursor_name left_ptr &
+
+feh --bg-fill "/home/reror/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Back_fon_BSPWM.png" &
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV
@@ -17,4 +24,4 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-feh --bg-fill ~/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Back_fon_BSPWM.png &
+
