@@ -17,4 +17,4 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-feh --bg-fill ~/путь/к/картинке.jpg &
+feh --bg-fill ~/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Back_fon_BSPWM.png &
