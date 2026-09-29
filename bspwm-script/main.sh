@@ -5,7 +5,7 @@ export XCURSOR_THEME=mouse_icons
 export XCURSOR_SIZE=24
 xsetroot -cursor_name left_ptr &
 
-feh --bg-fill /home/reror/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Back_fon_BSPWM.png &
+feh --bg-fill "/home/reror/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Back_fon_BSPWM.png" &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
