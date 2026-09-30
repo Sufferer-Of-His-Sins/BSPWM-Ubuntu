@@ -150,7 +150,7 @@ content = 󰈹
 content-foreground = #ff7139
 content-padding = 2
 click-left = firefox &
-click-right = firefox &
+click-right = firefox --private-window &
 
 [module/terminal]
 type = custom/text
