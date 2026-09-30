@@ -15,6 +15,8 @@ feh --bg-fill "/home/reror/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Bac
 bspc config focused_border_color "#FF8C00"
 bspc config normal_border_color  "#FF0000"
 bspc config border_width         2
+bspc config focus_follows_pointer true
+
 #_____________________________________________
 
 
