@@ -129,10 +129,9 @@ scroll-down = pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 [module/network]
 type = internal/network
-interface = wlan0
+interface = 
+interface-type = wireless
 interval = 3
-accumulate-stats = true
-unknown-as-up = true
 
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>

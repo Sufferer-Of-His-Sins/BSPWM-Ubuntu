@@ -115,3 +115,28 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Звук
+F4
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+F5
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+F6
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Яркость
+F1
+    brightnessctl set 5%-
+
+F2
+    brightnessctl set +5%
+
+# Скриншот (F11)
+F11
+    scrot -s ~/Pictures/screenshot-%Y-%m-%d_%H-%M-%S.png
+
+# Insert на F12
+F12
+    xdotool key Insert
