@@ -10,6 +10,11 @@ xsetroot -cursor_name left_ptr &
 feh --bg-fill "/home/reror/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Back_fon_BSPWM.png" &
 #_____________________________________________
 
+#_________________Polybar____________________
+pkill polybar
+polybar main &
+#_____________________________________________
+
 #_________________Композитор__________________
 pgrep -x picom > /dev/null || picom --config ~/.config/picom/picom.conf --experimental-backends -b
 #_____________________________________________
