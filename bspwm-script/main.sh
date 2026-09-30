@@ -1,4 +1,23 @@
 #! /bin/sh
+#____________Запуск терминала_________________
+sxhkd &
+pcmanfm --desktop &
+#_____________________________________________
+#_________________Тема мышки__________________
+export XCURSOR_THEME=mouse_icons
+export XCURSOR_SIZE=24
+xsetroot -cursor_name left_ptr &
+#_____________________________________________
+#_________________Фон_________________________
+feh --bg-fill "/home/reror/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Back_fon_BSPWM.png" &
+#_____________________________________________
+#__________________цвет терминала_____________
+bspc config focused_border_color "#FF8C00"
+bspc config normal_border_color  "#FF0000"
+bspc config border_width         2
+#_____________________________________________
+
+
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
@@ -17,4 +36,3 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-feh --bg-fill ~/Рабочий стол/BSPWM-Ubuntu/fon/back_fon/Back_fon_BSPWM.png &
