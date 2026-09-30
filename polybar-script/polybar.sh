@@ -30,7 +30,7 @@ font-0 = JetBrainsMono Nerd Font:size=11;2
 font-1 = JetBrainsMono Nerd Font:size=13;3
 font-2 = Font Awesome 6 Free Solid:size=11;2
 
-modules-left   = bspwm folder
+modules-left   = bspwm firefox folder terminal
 modules-center = 
 modules-right  = temperature memory pulseaudio network date
 
@@ -74,8 +74,7 @@ type = custom/text
 content = 󰉋
 content-foreground = ${colors.yellow}
 content-padding = 2
-click-left = pcmanfm &
-; или nautilus &  — как тебе удобнее
+click-left = nautilus &
 
 [module/temperature]
 type = internal/temperature
@@ -125,6 +124,8 @@ ramp-volume-1-foreground = ${colors.yellow}
 ramp-volume-2-foreground = ${colors.orange}
 
 click-right = pavucontrol &
+scroll-up = pactl set-sink-volume @DEFAULT_SINK@ +5%
+scroll-down = pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 [module/network]
 type = internal/network
@@ -142,6 +143,21 @@ label-disconnected = 󰤭 offline
 label-disconnected-foreground = ${colors.alert}
 
 click-left = ~/.config/polybar/scripts/network-menu.sh &
+
+[module/firefox]
+type = custom/text
+content = 󰈹
+content-foreground = #ff7139
+content-padding = 2
+click-left = firefox &
+click-right = firefox &
+
+[module/terminal]
+type = custom/text
+content = 󰆍
+content-foreground = ${colors.green}
+content-padding = 2
+click-left = kitty &
 
 [module/date]
 type = internal/date
